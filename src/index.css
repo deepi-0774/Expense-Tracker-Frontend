@@ -1,0 +1,130 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+body{
+  background-color: azure;
+}
+.container{
+  width: 400px;
+  background-color: white;
+  margin: 0 auto;
+  border-radius: 10px;
+  padding: 10px;
+}
+.container h2{
+  text-align: center;
+}
+.expense-item{
+  border: 1px solid #d4d4d4;
+  border-radius: 5px;
+  padding: 8px 10px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.expense-item.positive{
+  border-right: 4px solid green;
+}
+.expense-item.negative{
+  border-right: 4px solid red;
+}
+.expense-item.positive .amount{
+  color:green;
+}
+.expense-item.negative .amount{
+   color:red;
+}
+.expense-form{
+  border: 1px solid #d4d4d4;
+  border-radius: 5px;
+  padding: 10px;
+}
+.expense-form h4{
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.expense-form input{
+  display: block;
+  width: 100%;
+  padding: 8px 10px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+.expense-form button{
+  display: block;
+  width: 100%;
+  background-color: #8f1fd4;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.balance-container{
+  padding: 10px;
+  background-color: #9021d5;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-around;
+}
+.currency-items{
+  border-radius: 5px;
+  padding: 10px;
+  color: white;
+  background-color: #9c35dc;
+  width: 30%;
+  box-sizing: border-box;
+}
+.currency-items .title{
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-align: center;
+}
+.currency-items .amount{
+  text-align: center;
+}
+.amount.green{
+  color: green;
+}
+.amount.red{
+  color: red;
+}
+.expense-item{
+  position: relative;
+}
+.btn-container{
+  position:absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: -4px;
+  background-color: #a582e692;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  border-radius: 5px;
+}
+.expense-item:hover .btn-container{
+  opacity: 1;
+}
+.delete-btn{
+  background-color: red;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  padding: 5px;
+  cursor: pointer;
+}
+.edit-btn{
+  background-color: rgb(199, 114, 238);
+  border: none;
+  color: white;
+  border-radius: 5px;
+  padding: 5px;
+  cursor: pointer;
+}
